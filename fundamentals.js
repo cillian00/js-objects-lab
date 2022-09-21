@@ -1,7 +1,15 @@
 const aCar = {
   owner : "Joe Bloggs",
-  type : 'Toyota Corolla 1.8',
-  registration : '201WD1058'
+  type: {
+    make: 'Toyota',
+    makeType: 'Corola 1.8',
+  },
+  registration : {  
+
+    year: '201',
+    countryCode: 'WD',
+    number: '1058'
+  } 
 };
 
-console.log(aCar.owner);
+console.log(aCar.owner + ' drives a ' + aCar.type.make + ' and his reg is ' + aCar.registration.year + '' + aCar.registration.countryCode + '' + aCar.registration.number);
